@@ -156,10 +156,17 @@ int main(int argc, char *argv[])
             plot->replot();
             num_graph--;
 
-            // Сбросить выбор в выпадающем меню после удаления графика
             combo_graphics->setCurrentIndex(-1);
+        } else if (coordsX.size() > 0) {
+            plot->removeGraph(coordsX.size() - 1);
+            coordsX.remove(coordsX.size() - 1);
+            coordsY.remove(coordsY.size() - 1);
+            plot->replot();
+            num_graph--;
         }
     });
+
+
 
 
 
