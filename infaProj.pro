@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     LinearFunc.cpp \
+    SolverTest.cpp \
     SquareFunc.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
 HEADERS += \
     LinearFunc.h \
     Solver.h \
+    SolverTest.h \
     SquareFunc.h \
     mainwindow.h \
     qcustomplot.h
